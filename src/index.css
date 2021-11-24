@@ -4,10 +4,70 @@
     text-align: center;
 }
 
-.App > div {
-    width: 50%;
+.App > div:first-child {
+    width: 70%;
 }
 
 h1 {
     text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.checked {
+    color: blue;
+}
+
+.unchecked {
+    color: black;
+}
+
+.empl_container {
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid gray;
+}
+
+.empl_container-wrapper {
+    width: 20%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.empl_container-group {
+    padding: 4px;
+}
+
+.empl_container-groupName {
+    font-size: 20px;
+    margin: 4px;
+    font-weight: bold;
+}
+
+.empl_container-personName {
+    font-size: 18px;
+    font-weight: bold;
+}
+.empl_container-personInfo {
+    margin: 8px 0;
+}
+
+.emplBirthday_container-groupName {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.emplBirthday_container-wrapper {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-top: 38px;
+    border-top: 1px solid gray;
+    margin-left: 10px;
+}
+
+.emplBirthday_container-group {
+    padding: 4px 0;
 }

@@ -2,7 +2,10 @@ export interface IPerson {
     id: number,
     firstName: string,
     lastName: string,
-    dob: Date
+    dob: Date,
+    date?: Date,
+    formattedDate?: string,
+    active?: boolean
 }
 
 export interface IGroupedPerson {

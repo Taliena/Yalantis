@@ -1,18 +1,15 @@
-import {IGroupedPerson, IPerson} from "../helpers/interfaces";
-
+import {IGroupedPerson} from "../helpers/interfaces";
 import {EmployeeInfo} from "./employeesInfo";
-import {EmployeeItem} from "./employeeItem";
 
-export const EmployeesList: any = ({data}: { data: Array<IGroupedPerson> }) => {
+export const EmployeesList: any = ({data, changeListBirthday}: { data: Array<IGroupedPerson>, changeListBirthday: Function }) => {
     return (
-        <div>
+        <div className='empl_container'>
             {data.map((item) => (
-                <div>
-                    <div>{item.group}</div>
-                    <EmployeeInfo data={item.info}/>
+                <div className='empl_container-wrapper' key={item.group}>
+                    <div className='empl_container-groupName'>{item.group}</div>
+                    <EmployeeInfo data={item.info} changeListBirthday={changeListBirthday}/>
                 </div>
             ))}
         </div>
     );
-
-}
+};
