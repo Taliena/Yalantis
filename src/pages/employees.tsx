@@ -14,7 +14,6 @@ export const Employees = () => {
     const [list, setList]: [number[], Function] = useState([]);
 
     useEffect(() => {
-        debugger;
         const getEmployees = async () => {
             setIsLoading(true);
             try {

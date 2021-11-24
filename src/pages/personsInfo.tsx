@@ -1,7 +1,6 @@
 import {IPerson} from "../helpers/interfaces";
 
 export const PersonsInfo: any = ({data}: { data: Array<IPerson> }) => {
-    debugger;
     if (data.length === 0) {
         return (
             <div className='italic'>No Employees</div>
